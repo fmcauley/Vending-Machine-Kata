@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+enum Buttons :String {
+    case Chips = "chips"
+    case Cola  = "cola"
+    case Candy = "candy"
+}
