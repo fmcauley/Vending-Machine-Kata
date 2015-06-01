@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum Currency {
+    case Coin(String,String)
+}
+
