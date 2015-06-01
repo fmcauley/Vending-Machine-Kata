@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class VendingItems {
+
+    var itemName:String?
+    var itemCost:Float?
+
+    init(name: String, cost:Float) {
+        itemName = name
+        itemCost = cost
+    }
+}
+
+
