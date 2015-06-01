@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B15319F1B18DB1800530B22 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B15319E1B18DB1800530B22 /* Buttons.swift */; };
+		9B1531A01B18DB3A00530B22 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B15319E1B18DB1800530B22 /* Buttons.swift */; };
 		9B25736E1B1762EB004F277B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B25736D1B1762EB004F277B /* AppDelegate.swift */; };
 		9B2573701B1762EB004F277B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B25736F1B1762EB004F277B /* Images.xcassets */; };
 		9B2573731B1762EB004F277B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2573711B1762EB004F277B /* MainMenu.xib */; };
-		9B25737F1B1762EB004F277B /* VendingMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B25737E1B1762EB004F277B /* VendingMachineTests.swift */; };
+		9B25738A1B17635B004F277B /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2573881B17635B004F277B /* MainWindowController.swift */; };
+		9B25738B1B17635B004F277B /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2573881B17635B004F277B /* MainWindowController.swift */; };
+		9B25738C1B17635B004F277B /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2573891B17635B004F277B /* MainWindowController.xib */; };
+		9B25738D1B17635B004F277B /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2573891B17635B004F277B /* MainWindowController.xib */; };
+		9B25738F1B176485004F277B /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B25738E1B176485004F277B /* VendingMachine.swift */; };
+		9B2573901B176485004F277B /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B25738E1B176485004F277B /* VendingMachine.swift */; };
+		9B2573921B1767C5004F277B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2573911B1767C5004F277B /* Currency.swift */; };
+		9B2573931B1767C5004F277B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2573911B1767C5004F277B /* Currency.swift */; };
+		9B2573991B176985004F277B /* AcceptCoinsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2573971B176985004F277B /* AcceptCoinsTest.swift */; };
+		9B68C4DE1B1892AD00E650B4 /* SelectProductTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68C4DD1B1892AD00E650B4 /* SelectProductTest.swift */; };
+		9B68C4E31B18974D00E650B4 /* VendingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68C4E21B18974D00E650B4 /* VendingItems.swift */; };
+		9B68C4E41B18974D00E650B4 /* VendingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B68C4E21B18974D00E650B4 /* VendingItems.swift */; };
+		9B8BCDA11B1C5A1C00C5E27B /* ReturnCoinsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8BCDA01B1C5A1C00C5E27B /* ReturnCoinsTest.swift */; };
+		9B8BCDA51B1C5F3500C5E27B /* SoldOutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8BCDA41B1C5F3500C5E27B /* SoldOutTest.swift */; };
+		9B8BCDA71B1C62CD00C5E27B /* ExactChangeOnlyTesy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8BCDA61B1C62CD00C5E27B /* ExactChangeOnlyTesy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B15319E1B18DB1800530B22 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		9B2573681B1762EB004F277B /* VendingMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B25736C1B1762EB004F277B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B25736D1B1762EB004F277B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +48,16 @@
 		9B2573721B1762EB004F277B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9B2573781B1762EB004F277B /* VendingMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VendingMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B25737D1B1762EB004F277B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B25737E1B1762EB004F277B /* VendingMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingMachineTests.swift; sourceTree = "<group>"; };
+		9B2573881B17635B004F277B /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		9B2573891B17635B004F277B /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		9B25738E1B176485004F277B /* VendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
+		9B2573911B1767C5004F277B /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		9B2573971B176985004F277B /* AcceptCoinsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptCoinsTest.swift; sourceTree = "<group>"; };
+		9B68C4DD1B1892AD00E650B4 /* SelectProductTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectProductTest.swift; sourceTree = "<group>"; };
+		9B68C4E21B18974D00E650B4 /* VendingItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendingItems.swift; sourceTree = "<group>"; };
+		9B8BCDA01B1C5A1C00C5E27B /* ReturnCoinsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnCoinsTest.swift; sourceTree = "<group>"; };
+		9B8BCDA41B1C5F3500C5E27B /* SoldOutTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoldOutTest.swift; sourceTree = "<group>"; };
+		9B8BCDA61B1C62CD00C5E27B /* ExactChangeOnlyTesy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExactChangeOnlyTesy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +103,12 @@
 				9B25736F1B1762EB004F277B /* Images.xcassets */,
 				9B2573711B1762EB004F277B /* MainMenu.xib */,
 				9B25736B1B1762EB004F277B /* Supporting Files */,
+				9B2573881B17635B004F277B /* MainWindowController.swift */,
+				9B2573891B17635B004F277B /* MainWindowController.xib */,
+				9B25738E1B176485004F277B /* VendingMachine.swift */,
+				9B2573911B1767C5004F277B /* Currency.swift */,
+				9B68C4E21B18974D00E650B4 /* VendingItems.swift */,
+				9B15319E1B18DB1800530B22 /* Buttons.swift */,
 			);
 			path = VendingMachine;
 			sourceTree = "<group>";
@@ -92,7 +124,11 @@
 		9B25737B1B1762EB004F277B /* VendingMachineTests */ = {
 			isa = PBXGroup;
 			children = (
-				9B25737E1B1762EB004F277B /* VendingMachineTests.swift */,
+				9B2573971B176985004F277B /* AcceptCoinsTest.swift */,
+				9B68C4DD1B1892AD00E650B4 /* SelectProductTest.swift */,
+				9B8BCDA01B1C5A1C00C5E27B /* ReturnCoinsTest.swift */,
+				9B8BCDA41B1C5F3500C5E27B /* SoldOutTest.swift */,
+				9B8BCDA61B1C62CD00C5E27B /* ExactChangeOnlyTesy.swift */,
 				9B25737C1B1762EB004F277B /* Supporting Files */,
 			);
 			path = VendingMachineTests;
@@ -187,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B2573701B1762EB004F277B /* Images.xcassets in Resources */,
+				9B25738C1B17635B004F277B /* MainWindowController.xib in Resources */,
 				9B2573731B1762EB004F277B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B25738D1B17635B004F277B /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B68C4E31B18974D00E650B4 /* VendingItems.swift in Sources */,
+				9B2573921B1767C5004F277B /* Currency.swift in Sources */,
+				9B25738A1B17635B004F277B /* MainWindowController.swift in Sources */,
+				9B15319F1B18DB1800530B22 /* Buttons.swift in Sources */,
 				9B25736E1B1762EB004F277B /* AppDelegate.swift in Sources */,
+				9B25738F1B176485004F277B /* VendingMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +256,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B25737F1B1762EB004F277B /* VendingMachineTests.swift in Sources */,
+				9B1531A01B18DB3A00530B22 /* Buttons.swift in Sources */,
+				9B8BCDA51B1C5F3500C5E27B /* SoldOutTest.swift in Sources */,
+				9B8BCDA71B1C62CD00C5E27B /* ExactChangeOnlyTesy.swift in Sources */,
+				9B2573931B1767C5004F277B /* Currency.swift in Sources */,
+				9B68C4DE1B1892AD00E650B4 /* SelectProductTest.swift in Sources */,
+				9B68C4E41B18974D00E650B4 /* VendingItems.swift in Sources */,
+				9B8BCDA11B1C5A1C00C5E27B /* ReturnCoinsTest.swift in Sources */,
+				9B2573991B176985004F277B /* AcceptCoinsTest.swift in Sources */,
+				9B25738B1B17635B004F277B /* MainWindowController.swift in Sources */,
+				9B2573901B176485004F277B /* VendingMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +448,7 @@
 				9B2573841B1762EB004F277B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B2573851B1762EB004F277B /* Build configuration list for PBXNativeTarget "VendingMachineTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +457,7 @@
 				9B2573871B1762EB004F277B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
