@@ -11,26 +11,22 @@ import XCTest
 
 class ExactChangeOnlyTesy: XCTestCase {
 
+    var vendingMachine:VendingMachine?
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        vendingMachine = VendingMachine()
+        
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        vendingMachine = nil
         super.tearDown()
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    
+    func testThatTheVendingMachineWillInformTheCustomerThatExactChangeIsRequired(){
+        var vendingButton = Buttons.Chips
+        var machineHasFunds:Bool = vendingMachine!.hasProperFundsToMakeChange(vendingButton)
+        XCTAssertFalse(machineHasFunds, "There are not enough founds to complete this transaction")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

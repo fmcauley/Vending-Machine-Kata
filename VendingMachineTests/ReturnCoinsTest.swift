@@ -9,28 +9,54 @@
 import Cocoa
 import XCTest
 
-class ReturnCoinsTest: XCTestCase {
+/**
+cola for $1.00, chips for $0.50, and candy for $0.65.
+*/
 
+
+class ReturnCoinsTest: XCTestCase {
+    var vendingMachine:VendingMachine?
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        vendingMachine = VendingMachine()
+        
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        vendingMachine = nil
         super.tearDown()
     }
+    
+    
+    func testThatTheVendingMachineCanMakeChangeWhenTheCustomerPlaceMoreCoinsInThanAreNeeded(){
+        var quarter = Currency.Coin("24.26mm", "5.67g")
+        var twentyfiveCents:Float = vendingMachine!.acceptACoin(quarter)
+        var fiftyCents:Float = vendingMachine!.acceptACoin(quarter)
+        var seventyfiveCents:Float = vendingMachine!.acceptACoin(quarter)
+        
+        var vendingButton = Buttons.Candy
+        var selectedItem = vendingMachine!.selectAProductForButton(vendingButton)
 
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        var candy = VendingItems(name: "candy", cost: 0.65)
+    
+        XCTAssertGreaterThan(seventyfiveCents,candy.itemCost!, "The cost of candy is 0.65 cents you entered \(seventyfiveCents)")
+        
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testThatTheVendingMachineCanAcceptTheExactChangeForAnItem(){
+        var quarter = Currency.Coin("24.26mm", "5.67g")
+        var twentyfiveCents:Float = vendingMachine!.acceptACoin(quarter)
+        var fiftyCents:Float = vendingMachine!.acceptACoin(quarter)
+        var seventyfiveCents:Float = vendingMachine!.acceptACoin(quarter)
+        var dollar:Float = vendingMachine!.acceptACoin(quarter)
+        
+        var vendingButton = Buttons.Cola
+        var selectedItem = vendingMachine!.selectAProductForButton(vendingButton)
+        
+        var cola = VendingItems(name: "cola", cost: 1.00)
+        
+        XCTAssertEqual(cola.itemCost!, dollar, "The cost of cola is 1.00 cents you entered \(dollar)")
     }
-
+    
 }
